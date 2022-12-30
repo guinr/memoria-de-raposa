@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://prefab/card/card.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://prefab/card/card.gd" type="Script" id=2]
+[ext_resource path="res://assets/sounds/card-flip.mp3" type="AudioStream" id=3]
+
+[node name="Card" type="Control"]
+anchor_right = 0.125
+anchor_bottom = 0.25
+margin_right = -64.0
+margin_bottom = -96.0
+rect_min_size = Vector2( 64, 96 )
+rect_scale = Vector2( 2, 2 )
+size_flags_horizontal = 6
+size_flags_vertical = 6
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 2, 2 )
+frames = ExtResource( 1 )
+centered = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -15.0

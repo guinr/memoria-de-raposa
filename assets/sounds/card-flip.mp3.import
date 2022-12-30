@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/card-flip.mp3-9941ca8100161a9c98bd5f9c213a1de1.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/card-flip.mp3"
+dest_files=[ "res://.import/card-flip.mp3-9941ca8100161a9c98bd5f9c213a1de1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
